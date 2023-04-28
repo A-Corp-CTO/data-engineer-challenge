@@ -1,6 +1,6 @@
 # Data Engineering code challenge
 
-Here is my take to the challenge completed in about 4hours. Using mainly python and SQL. All the main code is in the main.py file and 
+Here is my take to the challenge completed in about 4hours. Using mainly python and SQL. All the main code is in the main.py file 
 
 This code challenge is designed to assess a candidate's ability to work with data and programming languages, in this case Python and SQL. The challenge involves Extract, Transform and Load (ETL) tasks, as well as data cleaning and modeling.
 
