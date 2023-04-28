@@ -1,6 +1,5 @@
 # Import packages
 import pandas as pd
-import psycopg2
 import hashlib
 import numpy as np
 # Import data
@@ -16,7 +15,7 @@ Updates=Updates.rename(columns={"deal_id":"DealID","update_type":"Type","old_val
 Deals = Deals.drop('pipeline_id',1)
 #Deals['UserID']=Deals['UserID'].apply(lambda x: int(hashlib.sha256(x.encode('utf-8')).hexdigest(),16))
 
-# Function to create the insert into file
+# Function to create the insert into table statements and add them to the create_statements.sql file
 def auto_insert(dataframe, table):
     col_names = list(dataframe.columns)
     with open('create_statements.sql','a+') as outfile:
